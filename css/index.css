@@ -1,0 +1,115 @@
+* {
+    /* Sets the font and placement of all the elements on screen */
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#sidebar {
+    /* Stylizes the div for the sidebar */
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+    float: left;
+    height: 100%;
+    width: 33%;
+    top: 0px;
+    left: 0px;
+}
+
+#header {
+    /* Stylizes the text for the title of the page */
+    margin-top: 15%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#text {
+    /* Stylizes the text in the sidebar */
+    margin-left: 20%;
+    font-size: medium;
+    width: 60%;
+}
+
+#slideNum {
+    /* Stylizes the number for the value of the caeser cypher slider in the sidebar */
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-left: 25%;
+}
+
+#slider {
+    /* Stylizes the caeser cypher slider in the sidebar */
+    display: inline;
+    color: white;
+    margin-left: 20px;
+    width: 40%;
+}
+
+#button {
+    /* Stylizes the update square button in the sidebar */
+    margin-left: 35%;
+    font-size: large;
+    font-family: Arial;
+    width: 30%;
+}
+
+table, th, td {
+    /* Sets the borders for the table, by setting borders around the table and
+       around each cell.*/
+    border: 1px solid rgb(255, 0, 0);
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    margin: 10% 25% 0%;
+}
+
+#caeser_div {
+    /* Stylizes the div container of the caeser section */
+    background-color: rgb(55, 177, 61);
+    position: fixed;
+    text-align: center;
+    float: right;
+    height: 50%;
+    width: 67%;
+    top: 0%;
+    left: 33%;
+    font-size: 25px;
+}
+
+#caeserText {
+    /* Stylizes the text in the caeser section */
+    font-weight: bold;
+    font-family: 'Courier';
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#square_div {
+    /* Stylizes the div container of the square section */
+    background-color: rgb(39, 164, 186);
+    position: fixed;
+    text-align: center;
+    float: right;
+    height: 50%;
+    width: 67%;
+    top: 50%;
+    left: 33%;
+    font-size: 25px;
+}
+
+#squareText {
+    /* Stylizes the text in the square section */
+    font-weight: bold;
+    font-family: 'Courier';
+    font-size: 50px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,144 @@
+<!--
+    Jonathan Khong
+    CSC337
+    PA5
+    This html file is for a site called Welcome to The Jumble which includes a box for the user input. 
+    Also a ceaser and square cipher of the user's input. There is also an update square button and a slider to adjust the ciphers.
+-->
+OCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>WTTJ</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+
+    <body>
+        <div id="sidebar">
+            <div id="header">
+                <h1 id=title>Welcome to the Jumble</h1>
+            </div>
+    
+            <span id="text_div">
+                <!-- User input -->
+                <input type="text" id="text" name="uInput" value="Welcome to the Jumble" oninput="textInput()"><br><br>
+            </span>
+    
+            <div id="slider_div">
+                <!-- caeser slider shift -->
+                <div id="slideNum">0</div>
+                <input type="range" min="0" max="26" id="slider" name="slide" oninput="slideInput()" value="0"><br><br>
+            </div>
+    
+            <div id="button_div">
+                <!-- Update square-->
+                <button type="button" id="button" onclick="shuffleSquare()">Update Square</button>
+            </div>
+            <div id="grid_div">
+                <!--Square cypher key -->
+                <table id="grid">
+                    <tr id="row1">
+                        <td id="az1">
+                            A
+                        </td>
+                        <td id="az2">
+                            B
+                        </td>
+                        <td id="az3">
+                            C
+                        </td>
+                        <td id="az4">
+                            D
+                        </td>
+                        <td id="az5">
+                            E
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td id="az6">
+                            F
+                        </td>
+                        <td id="az7">
+                            G
+                        </td>
+                        <td id="az8">
+                            H
+                        </td>
+                        <td id="az9">
+                            I
+                        </td>
+                        <td id="az10">
+                            J
+                        </td>
+                    </tr>
+                    <tr id="row3">
+                        <td id="az11">
+                            K
+                        </td>
+                        <td id="az12">
+                            L
+                        </td>
+                        <td id="az13">
+                            M
+                        </td>
+                        <td id="az14">
+                            N
+                        </td>
+                        <td id="az15">
+                            O
+                        </td>
+                    </tr>
+                    <tr id="row4">
+                        <td id="az16">
+                            P
+                        </td>
+                        <td id="az17">
+                            Q
+                        </td>
+                        <td id="az18">
+                            R
+                        </td>
+                        <td id="az19">
+                            S
+                        </td>
+                        <td id="az20">
+                            T
+                        </td>
+                    </tr>
+                    <tr id="row5">
+                        <td id="az21">
+                            U
+                        </td>
+                        <td id="az22">
+                            V
+                        </td>
+                        <td id="az23">
+                            W
+                        </td>
+                        <td id="az24">
+                            X
+                        </td>
+                        <td id="az25">
+                            Y
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div id="caeser_div">
+            <!-- Caeser cypher text -->
+            <p id="caeserText">
+                Welcome to the Jumble
+            </p>
+        </div>
+
+        <div id="square_div">
+            <!-- Square cypher text -->
+            <p id="squareText">
+                Welcome to the Jumble
+            </p>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
