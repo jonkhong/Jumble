@@ -1,7 +1,7 @@
 /*
 Jonathan Khong
-CSC337
-PA5
+Index.js
+Description: backend of jumble, includes cipher logic, text input, shuffle logic.
 */
 
 // list of alphabet
